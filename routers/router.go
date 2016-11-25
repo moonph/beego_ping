@@ -1,10 +1,11 @@
 package routers
 
 import (
-	"github.com/moonph/beego_ping/controllers"
 	"github.com/astaxie/beego"
+	"github.com/moonph/beego_ping/controllers"
 )
 
 func init() {
-    beego.Router("/", &controllers.MainController{})
+	beego.Router("/", &controllers.MainController{})
+	beego.Router("/ping", &controllers.PingController{})
 }
